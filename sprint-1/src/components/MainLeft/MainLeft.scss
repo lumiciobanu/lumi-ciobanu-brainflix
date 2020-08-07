@@ -1,0 +1,21 @@
+@import '../../partials/variables';
+@import '../../partials/typography';
+@import '../../partials/mixins';
+@import '../../partials/global';
+
+.mainLeft__meta-left {
+    display: flex;
+}
+
+.mainLeft__header {
+    border-bottom: 2px solid $mercury;
+}
+.mainLeft__meta-right,
+.mainLeft__views, 
+.mainLeft__likes {
+    display: flex;
+}
+.mainLeft__title {
+    @include title-mobile;
+}
+

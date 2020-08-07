@@ -1,0 +1,30 @@
+@import '../../partials/variables';
+@import '../../partials/mixins';
+@import '../../partials/global';
+
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    @include tablet {
+        padding: 1rem 2rem;
+    }
+}
+.header__img {
+    width: 50px;
+
+}
+
+.header__btn {
+    background-color: $light-blue;
+    color: $white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    min-width: 100%;
+}

@@ -1,0 +1,24 @@
+* {
+    font-family: "AvenirNextProLT";
+
+    @include reset-margin-border-box;
+
+    &:before {
+        @include reset-margin-border-box;
+    }
+    &:after {
+        @include reset-margin-border-box;
+    }
+}
+
+p {
+    font-size: 0.813rem;
+    line-height: 1.125rem;
+    font-weight: normal;
+
+    @include tablet {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+    }
+}
+

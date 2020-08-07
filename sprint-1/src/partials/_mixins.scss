@@ -1,0 +1,31 @@
+@mixin tablet {
+    @media screen and (min-width: $tablet-breakpoint) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+      @content;
+    }
+  }
+  
+  @mixin reset-margin-border-box {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  @mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* Typography */
+  @mixin title-mobile {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    color: $black;
+    // padding: 6rem 0;
+    font-weight: bold;
+  }
