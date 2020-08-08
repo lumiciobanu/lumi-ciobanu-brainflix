@@ -4,9 +4,9 @@ import heroVideo from '../../assets/video/BrainStation-Sample-Video.mp4';
 
 function Hero(props) {
     return (
-      <section className="hero">
+      <section className="Hero">
         
-          <video className="hero__video" source src={heroVideo} type="video/mp4"> </video>
+          <video className="Hero__video" source src={heroVideo} type="video/mp4"> </video>
         
         
         

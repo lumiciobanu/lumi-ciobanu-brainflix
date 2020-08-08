@@ -13,13 +13,13 @@ import videoImg8 from '../../assets/images/video-list-8.jpg';
 
 function ListItem(props) {
     return (
-        
+
         <div>
-        <img className="aside__img" src={props.image} />
-        <div classname="aside__header">
-            <h2 className="aside__newTitle">{props.title}</h2>
-            <h3 className="aside__author">{props.author}</h3>
-        </div>
+            <img className="Aside__img" src={props.image} />
+            <div classname="Aside__header">
+                <h2 className="Aside__newTitle">{props.title}</h2>
+                <h3 className="Aside__author">{props.author}</h3>
+            </div>
         </div>
     )
 }
@@ -41,24 +41,26 @@ function MainAside(props) {
 
 
     return (
-        <section className="aside">
-            <div className="aside__container">
-                <p className="aside__header">Next Video</p>
+        <section className="Aside">
+            <div className="Aside__container">
+                <p className="Aside__header">Next Video</p>
 
-                <div className="aside__list">
+                <div className="Aside__list">
 
                     {listArray.map((item, index) => {
                         return <ListItem key={index} image={item.image} title={item.title} author={item.author} />
                     })
                     }
 
-                
 
-            </div>
+
+                </div>
 
 
             </div>
         </section >
+
+        
     );
 }
 

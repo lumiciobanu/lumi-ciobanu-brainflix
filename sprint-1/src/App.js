@@ -1,14 +1,14 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import MainPage from './components/MainPage/MainPage';
+import Homepage from './components/Homepage/Homepage';
 
 
 function App() {
   return (
     <>
-      <Header/>
-      <MainPage />
-      
+      <Header />
+      <Homepage/>
+            
 
     </>
   );
