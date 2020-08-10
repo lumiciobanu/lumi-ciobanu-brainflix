@@ -7,7 +7,7 @@ import HeaderImg from '../../assets/images/Mohan-muruge.jpg';
 function Header(props) {
   return (
     <header className="Header">
-      <div className="Header__logo"><img src={logo} alt="Logo" />;</div>
+      <div className="Header__logo"><img src={logo} alt="Brainflix Logo" /></div>
       <div className="Header__elements">
       <div className="Header__search">
         <label className="Header__label">

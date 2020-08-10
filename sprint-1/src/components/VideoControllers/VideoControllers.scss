@@ -1,0 +1,48 @@
+@import "../../partials/variables";
+@import "../../partials/mixins";
+@import "../../partials/global";
+
+
+.Hero__controlers {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    margin-top: -60px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    
+  }
+  
+  .Hero__controllerPlay {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 10px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .Hero__controllerSeek {
+    width: 200px;
+    border: 18px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    @include tablet {
+      width: 600px;
+    }
+  }
+  
+  .Hero__controllerLast {
+    display: flex;
+    justify-content: space-around;
+    width: 70px;
+    height: 40px;
+    border: 10px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+  }

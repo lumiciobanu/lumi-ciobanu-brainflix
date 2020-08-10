@@ -1,5 +1,6 @@
 import React from 'react';
 import './MainAside.scss';
+import videoImg0 from '../../assets/images/video-list-0.jpg';
 import videoImg1 from '../../assets/images/video-list-1.jpg';
 import videoImg2 from '../../assets/images/video-list-2.jpg';
 import videoImg3 from '../../assets/images/video-list-3.jpg';
@@ -28,6 +29,7 @@ function ListItem(props) {
 
 function MainAside(props) {
     let listArray = [
+        { image: videoImg0, title: 'Current Title Playing...', author: 'John Doe' },
         { image: videoImg1, title: 'Become a Travel Pro In One Wasy Lessson...', author: 'Scotty Cranmer' },
         { image: videoImg2, title: 'Les Houches The Hidden Gem Of The…', author: 'Scotty Cranmer' },
         { image: videoImg3, title: 'Travel Health Useful Medical Information…', author: 'Scotty Cranmer' },

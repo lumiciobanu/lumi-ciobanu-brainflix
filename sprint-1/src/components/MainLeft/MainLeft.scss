@@ -26,7 +26,7 @@
         border-bottom: 1px solid $mercury;
         margin-bottom: 1rem;
 
-        @include desktop {
+        @include tablet {
             display: flex;
             justify-content: space-between;
         }
