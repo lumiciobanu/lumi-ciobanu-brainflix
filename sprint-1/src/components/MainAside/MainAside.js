@@ -14,11 +14,11 @@ import videoImg8 from '../../assets/images/video-list-8.jpg';
 function ListItem(props) {
     return (
 
-        <div>
+        <div className="Aside__item">
             <img className="Aside__img" src={props.image} />
-            <div classname="Aside__header">
+            <div className="Aside__header">
                 <h2 className="Aside__newTitle">{props.title}</h2>
-                <h3 className="Aside__author">{props.author}</h3>
+                <p className="Aside__author">{props.author}</p>
             </div>
         </div>
     )
@@ -43,7 +43,7 @@ function MainAside(props) {
     return (
         <section className="Aside">
             <div className="Aside__container">
-                <p className="Aside__header">Next Video</p>
+                <p className="Aside__title">Next Video</p>
 
                 <div className="Aside__list">
 

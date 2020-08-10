@@ -1,14 +1,22 @@
 import React from 'react';
+import './components/MainLeft/MainLeft.scss';
 import Header from './components/Header/Header';
-import Homepage from './components/Homepage/Homepage';
+import Hero from '././components/Hero/Hero';
+import MainLeft from '././components/MainLeft/MainLeft';
+import MainAside from '././components/MainAside/MainAside';
 
 
 function App() {
   return (
     <>
       <Header />
-      <Homepage/>
+      <Hero />
             
+            <section className="Main">     
+            <MainLeft />
+            <MainAside />
+
+            </section>     
 
     </>
   );

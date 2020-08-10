@@ -1,4 +1,96 @@
-.comments__img {
-    width: 50px;
+@import "../../partials/variables";
+@import "../../partials/typography";
+@import "../../partials/mixins";
+@import "../../partials/global";
 
+.Comments {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Comments__title {
+    @include title-mobile;
+    margin-bottom: 2rem;
+}
+.Comments__div {
+    display: flex;
+    border-bottom: 1px solid $mercury;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.Comments__img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50px;
+}
+.Comments__form {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+.Comments__subtitle {
+    @include label-text;
+}
+
+
+.comments__textarea {
+    height: 100px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $silver;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    right: 0;
+}
+
+.Comments__button {
+    
+        background-color: $light-blue;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        width: 100%;
+   }
+
+.Comments__new {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $mercury;
+        @include tablet {
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+}
+
+.Comments__add {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+
+.Comments__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.Comments__name {
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.Comments__date {
+    margin-top: 0.2rem;
+    @include label-text;
 }

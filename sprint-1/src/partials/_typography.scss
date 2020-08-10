@@ -1,10 +1,16 @@
 $base-font-size: 16px;
 
+@font-face {
+    font-family: "AvenirNextProLT";
+    src: url("../assets/fonts/AvenirNextProLT/avenirnextltpro-bold.otf");
+    font-weight: bold;
+}
 
 @font-face {
     font-family: "AvenirNextProLT";
-    src: url("../assets/fonts/AvenirNextProLT/avenirnextltpro-regular.otf");
-    font-weight: normal;
+    src: url("../assets/fonts/AvenirNextProLT/avenirnextltpro-boldit.otf");
+    font-weight: bold;
+    font-style: italic;
 }
 
 @font-face {
@@ -15,6 +21,73 @@ $base-font-size: 16px;
 
 @font-face {
     font-family: "AvenirNextProLT";
-    src: url("../assets/fonts/AvenirNextProLT/avenirnextltpro-bold.otf");
-    font-weight: bold;
+    src: url("../assets/fonts/AvenirNextProLT/avenirnextltpro-demiit.otf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "AvenirNextProLT";
+    src: url("../assets/fonts/AvenirNextProLT/avenirnextltpro-heavy.otf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "AvenirNextProLT";
+    src: url("../assets/fonts/AvenirNextProLT/avenirnextltpro-heavyit.otf");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "AvenirNextProLT";
+    src: url("../assets/fonts/AvenirNextProLT/avenirnextltpro-it.otf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "AvenirNextProLT";
+    src: url("../assets/fonts/AvenirNextProLT/avenirnextltpro-light.otf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "AvenirNextProLT";
+    src: url("../assets/fonts/AvenirNextProLT/avenirnextltpro-lightit.otf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "AvenirNextProLT";
+    src: url("../assets/fonts/AvenirNextProLT/avenirnextltpro-medium.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "AvenirNextProLT";
+    src: url("../assets/fonts/AvenirNextProLT/avenirnextltpro-mediumit.otf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "AvenirNextProLT";
+    src: url("../assets/fonts/AvenirNextProLT/avenirnextltpro-thin.otf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "AvenirNextProLT";
+    src: url("../assets/fonts/AvenirNextProLT/avenirnextltpro-thinit.otf");
+    font-weight: 200;
+    font-style: it;
+}
+
+
+@font-face {
+    font-family: "AvenirNextProLT";
+    src: url("../assets/fonts/AvenirNextProLT/avenirnextltpro-regular.otf");
+    font-weight: normal;
 }

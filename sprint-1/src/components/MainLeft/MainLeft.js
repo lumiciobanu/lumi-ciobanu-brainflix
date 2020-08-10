@@ -1,6 +1,5 @@
 import React from 'react';
 import MainLeftComments from '../MainLeftComments/MainLeftComments';
-
 import './MainLeft.scss';
 import viewsIcon from '../../assets/icons/Icon-views.svg';
 import likesIcon from '../../assets/icons/Icon-likes.svg';
@@ -18,11 +17,11 @@ function HeaderItem(props) {
 
         <div className="MainLeft__meta-right">
           <div className="MainLeft__views">
-            <img className="MainLeft__viewsIcon" src={viewsIcon} />
+            <img className="MainLeft__icon MainLeft__viewsIcon" src={viewsIcon} />
             <p className="MainLeft__viewsText">{props.views}</p>
           </div>
           <div className="MainLeft__likes">
-            <img className="MainLeft__likesIcon" src={likesIcon} />
+            <img className="MainLeft__icon MainLeft__likesIcon" src={likesIcon} />
             <p className="MainLeft__likesText">{props.likes}</p>
           </div>
         </div>
@@ -48,7 +47,7 @@ function MainLeft(props) {
     <section className="MainLeft">
       <div className="MainLeft__header">
         {headerArray.map((item, index) => {
-          return <HeaderItem key={index} title={item.title} author={item.author} author={item.date} views={item.views} likes={item.likes} text={props.text} />
+          return <HeaderItem key={index} title={item.title} author={item.author} date={item.date} views={item.views} likes={item.likes} text={props.text} />
         })
         }
 

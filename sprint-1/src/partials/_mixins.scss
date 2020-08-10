@@ -22,10 +22,33 @@
   }
 
   /* Typography */
-  @mixin title-mobile {
-    font-size: 2.2rem;
-    line-height: 2.8rem;
+  @mixin big-title-mobile {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
     color: $black;
-    // padding: 6rem 0;
+    margin-bottom: 1rem;
     font-weight: bold;
+  }
+  
+  
+  @mixin title-mobile {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: $black;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  @mixin subtitle-mobile {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: $black;
+    font-weight: 500;
+  }
+
+  @mixin label-text {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: $silver;
+    text-transform: uppercase;
   }

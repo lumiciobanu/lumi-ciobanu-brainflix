@@ -1,9 +1,32 @@
-@import '../../partials/variables';
-@import '../../partials/mixins';
-@import '../../partials/global';
+@import "../../partials/variables";
+@import "../../partials/mixins";
+@import "../../partials/global";
 
+.Header {
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+        flex-direction: row;
+        
+    }
+}
 
-.header__logo {
+.Header__elements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+        flex-direction: row;
+        align-items: center;
+         }
+    @include desktop {
+        margin-left: 10rem;
+    }
+}
+
+.Header__logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,18 +36,70 @@
         padding: 1rem 2rem;
     }
 }
-.header__img {
-    width: 50px;
-
+.Header__search {
+    width: 100%;
+    @include tablet {
+        margin-right: 1rem;
+    }
+}
+.Header__label {
+    position: relative;
 }
 
-.header__btn {
+.Header__label:before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 1.25rem;
+    background: url("../../assets/icons/Icon-search.svg");
+    background-repeat: no-repeat;
+}
+
+.Header__input {
+    padding: 1rem 1rem 1rem 2.5rem;
+    border-radius: 4px;
+    border: 2px solid $mercury;
+    background-color: $alabaster;
+    width: 100%;
+    
+}
+
+.Header__upload {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    width: 100%;
+   
+}
+.Header__img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50px;
+}
+
+.Header__btn {
+    position: relative;
     background-color: $light-blue;
     color: $white;
-    padding: 12px 20px;
+    padding: 12px 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
     text-transform: uppercase;
-    min-width: 100%;
+    min-width: 13.2rem;
+    letter-spacing: 1px;
+    margin-right: 1rem;
+}
+
+.Header__btn:before {
+    content: "";
+    position: absolute;
+    left: 3rem;
+    top: 1.5rem;
+    bottom: 0;
+    width: 1.25rem;
+    background: url("../../assets/icons/Icon-upload.svg");
+    background-repeat: no-repeat;
 }
