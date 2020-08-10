@@ -1,53 +1,67 @@
-@import '../../partials/variables';
-@import '../../partials/typography';
-@import '../../partials/mixins';
-@import '../../partials/global';
-
+@import "../../partials/variables";
+@import "../../partials/typography";
+@import "../../partials/mixins";
+@import "../../partials/global";
 
 .Main {
+    // width: 100%;
     padding: 2rem;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     @include desktop {
-        flex-direction: row;
+        padding-right: 4rem;
+        padding-left: 4rem;
     }
 }
-
-.MainLeft__meta {
-    border-bottom: 1px solid $mercury;
-    margin-bottom: 1rem;
+.MainLeft {
+    @include desktop {
+        flex: 2;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-right: 2rem;
+        border-right: 1px solid $mercury;
     }
 
-.MainLeft__meta-left, 
-.MainLeft__meta-right
- {
-    display: flex;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
+    &__meta {
+        border-bottom: 1px solid $mercury;
+        margin-bottom: 1rem;
 
-.MainLeft__views, 
-.MainLeft__likes {
-    display: flex;
-}
+        @include desktop {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 
-.MainLeft__title {
-    @include big-title-mobile;
-}
+    &__meta-left,
+    &__meta-right {
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 
-.MainLeft__author {
-    font-weight: bold;
-    margin-right: 1rem;
-}
+    &__views,
+    &__likes {
+        display: flex;
+    }
 
-.MainLeft__date {
-    color: $silver;
-}
+    &__title {
+        @include big-title-mobile;
+    }
 
-.MainLeft__icon {
-    margin-right: 0.5rem;
-}
+    &__author {
+        font-weight: bold;
+        margin-right: 1rem;
+    }
 
-.MainLeft__views {
-    margin-right: 1rem;
+    &__date {
+        color: $silver;
+    }
+
+    &__icon {
+        margin-right: 0.5rem;
+    }
+
+    &__views {
+        margin-right: 1rem;
+    }
 }

@@ -9,7 +9,7 @@ import MainAside from '././components/MainAside/MainAside';
 function App() {
   return (
     <>
-      <Header />
+      <Header /> 
       <Hero />
             
             <section className="Main">     

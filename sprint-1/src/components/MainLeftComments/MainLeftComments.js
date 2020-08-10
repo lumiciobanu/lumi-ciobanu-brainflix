@@ -61,9 +61,9 @@ function MainLeftComments(props) {
                     <img className="Comments__img" src={commentsImg} />
 
 
-                    <div className="Comments__form">
+                    <div className="Comments__object">
                         <p className="Comments__subtitle">Join the conversation</p>
-                        <form id="CommentsForm">
+                        <form id="CommentsForm" className="Comments__form">
                             <label className="comments__label" name="yourcomment" for="comment"></label>
                             <textarea className="comments__textarea" id="subject" name="subject" placeholder="Write comment here" />
                             <input className="Comments__button" type="submit" value="Comment" />

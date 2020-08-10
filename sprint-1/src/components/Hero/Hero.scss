@@ -12,6 +12,11 @@
   width: 100%;
   // height: 12.5rem;
   // z-index: 1;
+  @include desktop {
+    padding-right: 10rem;
+    padding-left: 10rem;
+    background-color: $black;
+  }
 }
 
 .Hero__controlers {

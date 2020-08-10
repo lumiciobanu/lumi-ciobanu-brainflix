@@ -6,34 +6,54 @@
 .Comments {
     margin-top: 2rem;
     margin-bottom: 2rem;
-}
 
-.Comments__title {
+
+&__title {
     @include title-mobile;
     margin-bottom: 2rem;
 }
-.Comments__div {
+&__div {
     display: flex;
     border-bottom: 1px solid $mercury;
     margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
-.Comments__img {
+&__img {
     width: 4rem;
     height: 4rem;
     border-radius: 50px;
+    margin-top: 1rem;
 }
-.Comments__form {
+&__object {
+    width: 100%;
     margin-left: 1rem;
     margin-right: 0.5rem;
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+    }
 }
-.Comments__subtitle {
+&__subtitle {
     @include label-text;
+    margin-bottom: 1rem;
 }
 
+&__form {
+    @include tablet {
+    display: flex;
+    align-items: center;
+    }
+}
 
-.comments__textarea {
+&__textarea {
     height: 100px;
+    @include tablet {
+        height: 50px;
+        margin-right: 1rem;
+        @include tablet {
+            width: 140%;
+        }
+    }
 }
 
 input[type="text"],
@@ -41,43 +61,39 @@ select,
 textarea {
     width: 100%;
     padding: 12px;
+    background-color: $alabaster;
     border: 1px solid $silver;
     border-radius: 5px;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    // margin-top: 6px;
+    // margin-bottom: 16px;
     resize: vertical;
     right: 0;
+    }
+
+&__button {
+    background-color: $light-blue;
+    color: white;
+    padding: 18px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
 }
 
-.Comments__button {
-    
-        background-color: $light-blue;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        text-transform: uppercase;
-        width: 100%;
-   }
-
-.Comments__new {
+&__new {
     display: flex;
     padding-top: 1rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid $mercury;
-        @include tablet {
-        margin-right: 3rem;
-        margin-left: 3rem;
-    }
 }
 
-.Comments__add {
+&__add {
     margin-left: 1rem;
     margin-right: 0.5rem;
 }
 
-.Comments__header {
+&__header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -85,12 +101,13 @@ textarea {
     padding-bottom: 1rem;
 }
 
-.Comments__name {
+&__name {
     font-weight: 500;
     margin-right: 1rem;
 }
 
-.Comments__date {
+&__date {
     margin-top: 0.2rem;
     @include label-text;
+}
 }
