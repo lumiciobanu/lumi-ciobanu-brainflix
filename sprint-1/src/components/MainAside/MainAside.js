@@ -9,21 +9,7 @@ import videoImg5 from '../../assets/images/video-list-5.jpg';
 import videoImg6 from '../../assets/images/video-list-6.jpg';
 import videoImg7 from '../../assets/images/video-list-7.jpg';
 import videoImg8 from '../../assets/images/video-list-8.jpg';
-
-
-
-function ListItem(props) {
-    return (
-
-        <div className="Aside__item">
-            <img className="Aside__img" src={props.image} />
-            <div className="Aside__header">
-                <h2 className="Aside__newTitle">{props.title}</h2>
-                <p className="Aside__author">{props.author}</p>
-            </div>
-        </div>
-    )
-}
+import ListItem from '../ListItem/ListItem';
 
 
 

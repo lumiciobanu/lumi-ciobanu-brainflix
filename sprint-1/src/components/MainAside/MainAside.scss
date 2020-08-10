@@ -10,14 +10,7 @@
         @include label-text;
         padding-bottom: 2rem;
     }
-    &__header {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
+    
     &__list {
         @include tablet {
             width: 50%;
@@ -27,18 +20,5 @@
             width: 100%;
         }
     }
-    &__item {
-        display: flex;
-        margin-bottom: 2rem;
-    }
-    &__img {
-        width: 50%;
-        height: 6.25rem;
-        border-radius: 20px;
-    }
-
-    &__newTitle {
-        @include subtitle-mobile;
-        margin-bottom: 0.5rem;
-    }
+    
 }
