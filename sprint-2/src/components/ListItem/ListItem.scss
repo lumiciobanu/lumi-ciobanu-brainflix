@@ -1,0 +1,28 @@
+@import "../../partials/variables";
+@import "../../partials/typography";
+@import "../../partials/mixins";
+@import "../../partials/global";
+
+
+.Aside__item {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.Aside__header {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.Aside__img {
+    width: 50%;
+    height: 6.25rem;
+    border-radius: 20px;
+}
+
+.Aside__newTitle {
+    @include subtitle-mobile;
+    margin-bottom: 0.5rem;
+}

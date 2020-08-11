@@ -1,0 +1,24 @@
+@import "../../partials/variables";
+@import "../../partials/typography";
+@import "../../partials/mixins";
+@import "../../partials/global";
+
+.Aside {
+    flex: 1;
+
+    &__title {
+        @include label-text;
+        padding-bottom: 2rem;
+    }
+    
+    &__list {
+        @include tablet {
+            width: 50%;
+        }
+
+        @include desktop {
+            width: 100%;
+        }
+    }
+    
+}
