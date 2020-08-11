@@ -4,6 +4,8 @@ import Header from './components/Header/Header';
 import Hero from '././components/Hero/Hero';
 import MainLeft from '././components/MainLeft/MainLeft';
 import MainAside from '././components/MainAside/MainAside';
+import Upload from '././components/Upload/Upload';
+
 
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
             <MainAside />
 
             </section>     
-
+      <Upload />
     </>
   );
 }

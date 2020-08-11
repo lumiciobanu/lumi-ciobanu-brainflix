@@ -1,0 +1,54 @@
+@import "../../partials/variables";
+@import "../../partials/mixins";
+@import "../../partials/global";
+
+
+.Upload {
+    padding: 2rem;
+}
+
+.Upload__content {
+    display: flex;
+}
+.Upload__videobox,
+.Upload__formbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.Upload__thumbnail {
+    width: 300px;
+}
+
+.Upload__cta {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.Upload__publish {
+    background-color: $light-blue;
+    color: $white;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    min-width: 10rem;
+    letter-spacing: 1px;
+    
+}
+
+.Upload__cancel {
+    background-color: $white;
+    color: $light-blue;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    min-width: 5rem;
+    letter-spacing: 1px;
+    margin-right: 1rem;
+}
