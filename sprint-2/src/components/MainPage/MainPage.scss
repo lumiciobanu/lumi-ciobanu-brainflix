@@ -1,0 +1,19 @@
+@import "../../partials/variables";
+@import "../../partials/typography";
+@import "../../partials/mixins";
+@import "../../partials/global";
+
+
+
+
+
+.Main {
+    // width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    @include desktop {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+}

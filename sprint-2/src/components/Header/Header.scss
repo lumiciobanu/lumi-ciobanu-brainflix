@@ -103,4 +103,7 @@
     background: url("../../assets/icons/Icon-upload.svg");
     background-repeat: no-repeat;
 }
+&__link:visited {
+    color: $white;
+}
 }
