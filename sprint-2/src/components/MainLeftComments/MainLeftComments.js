@@ -28,30 +28,7 @@ function CommentItem(props) {
 
 function MainLeftComments(props) {
 
-    let commentArray = [
-        {
-            name: "Micheal Lyons",
-            date: "12/04/2019",
-            comment: "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.",
-            image: commentsImg
-        },
-
-        {
-            name: "Gary Wong",
-            date: "12/04/2019",
-            comment: "Every time I see him shred I feel so motivated to get off my couch and hop on my board. He’s so talented! I wish I can ride like him one day so I can really enjoy myself!",
-            image: commentsImg
-        },
-
-        {
-            name: "Theodore Duncan",
-            date: "12/04/2019",
-            comment: "How can someone be so good. You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!",
-            image: commentsImg
-        }
-    ]
-
-
+    
     return (
         <div className="Comments">
             <div className="Comments__container">
@@ -75,10 +52,10 @@ function MainLeftComments(props) {
                 
 
 
-                    {commentArray.map((item, index) => {
+                    {props.comments.map((item, index) => {
                         return <CommentItem key={index} name={item.name} date={item.date} comment={item.comment} image={item.image} />
                     })
-                    }
+                }
 
 
                 

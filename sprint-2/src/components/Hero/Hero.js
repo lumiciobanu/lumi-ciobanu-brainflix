@@ -5,7 +5,7 @@ import VideoImg0 from '../../assets/images/video-list-0.jpg';
 import VideoControllers from '../../components/VideoControllers/VideoControllers'
 
 
-function Hero(props) {
+function HeroFeatured(props) {
   return (
     <section className="Hero">
       <video className="Hero__video" poster={VideoImg0} source src={HeroVideo} type="video/mp4"> </video>
@@ -19,4 +19,4 @@ function Hero(props) {
   );
 }
 
-export default Hero;
+export default HeroFeatured;

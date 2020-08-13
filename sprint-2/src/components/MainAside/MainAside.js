@@ -10,6 +10,7 @@ import videoImg6 from '../../assets/images/video-list-6.jpg';
 import videoImg7 from '../../assets/images/video-list-7.jpg';
 import videoImg8 from '../../assets/images/video-list-8.jpg';
 import ListItem from '../ListItem/ListItem';
+import MainPage from '../MainPage/MainPage'
 
 
 
@@ -40,7 +41,7 @@ function MainAside(props) {
                     })
                     }
 
-
+                    {/* <ListItem = {this.state.videoList} /> */}
 
                 </div>
 
@@ -48,7 +49,7 @@ function MainAside(props) {
             </div>
         </section >
 
-        
+
     );
 }
 
