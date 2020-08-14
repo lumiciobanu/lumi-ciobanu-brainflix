@@ -53,7 +53,7 @@ function MainLeftComments(props) {
 
 
                     {props.comments.map((item, index) => {
-                        return <CommentItem key={index} name={item.name} date={item.date} comment={item.comment} image={item.image} />
+                        return <CommentItem key={index} name={item.name} date={item.date} comment={item.comment} image={item.image} text={item.text} />
                     })
                 }
 
