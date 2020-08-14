@@ -9,7 +9,7 @@ function ListItem(props) {
             <img className="Aside__img" src={props.video.image} />
             <div className="Aside__header">
                 <h2 className="Aside__newTitle">{props.video.title}</h2>
-                <p className="Aside__author">{props.video.author}</p>
+                <p className="Aside__author">{props.video.channel}</p>
             </div>
         </div>
     )

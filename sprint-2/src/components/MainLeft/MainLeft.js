@@ -6,14 +6,19 @@ import likesIcon from '../../assets/icons/Icon-likes.svg';
 
 
 function HeaderItem(props) {
+
+  const functionHere = ()  => {
+
+  }
+
   return (
     <div>
       <div className="MainLeft__header">
         <h1 className="MainLeft__title">{props.title}</h1>
         <div className="MainLeft__meta">
           <div className="MainLeft__meta-left">
-            <p className="MainLeft__author">{props.author}</p>
-            <p className="MainLeft__date">{props.date}</p>
+            <p className="MainLeft__author">{props.channel}</p>
+            <p className="MainLeft__date">{functionHere(props.timestamp)}</p>
           </div>
 
           <div className="MainLeft__meta-right">
@@ -28,7 +33,7 @@ function HeaderItem(props) {
           </div>
         </div>
       </div>
-      <p className="MainLeft__text">{props.text}</p>
+      <p className="MainLeft__text">{props.description}</p>
     </div>
   )
 }
@@ -41,7 +46,7 @@ function MainLeft(props) {
     <section className="MainLeft">
       <div className="MainLeft__header">
        
-        <HeaderItem title={props.featured.title} author={props.featured.author} date={props.featured.date} views={props.featured.views} likes={props.featured.likes} text={props.featured.text}/>
+        <HeaderItem title={props.featured.title} channel={props.featured.channel} timestamp={props.featured.timestamp} views={props.featured.views} likes={props.featured.likes} description={props.featured.description}/>
 
       </div>
       

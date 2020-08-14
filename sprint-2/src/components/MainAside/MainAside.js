@@ -6,7 +6,7 @@ import ListItem from '../ListItem/ListItem';
 
 
 function MainAside(props) {
-
+    console.log(props.videos)
     return (
         <section className="Aside">
             <div className="Aside__container">

@@ -7,17 +7,17 @@ import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
 
 
-const API_URL = '7f04c159-f06c-415a-ab44-82b82e7c16f8';
+
 function App() {
   return (
     <>
       <BrowserRouter>
         <Header />
-        {/* <MainPage />  */}
-        
+
         <Switch>
-          <Route path="/UploadPage" exact component={Upload} />
-          <Route path="/" exact component={MainPage} />
+          <Route exact path="/" component={MainPage} />
+          <Route path="/UploadPage" component={Upload} />
+          <Route path='/:movieId' component={MainPage} />
         </Switch>
       </BrowserRouter>
     </>
@@ -25,7 +25,6 @@ function App() {
 }
 
 export default App;
-export { API_URL };
 
-//all data should exist here and should it pass it down
+
 

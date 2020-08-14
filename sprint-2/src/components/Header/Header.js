@@ -10,7 +10,7 @@ function Header(props) {
   return (
     <header className="Header">
       
-        <div className="Header__logo"><Link class="Header__link" to="/"><img src={logo} alt="Brainflix Logo" /></Link></div>
+        <div className="Header__logo"><Link className="Header__link" to="/"><img src={logo} alt="Brainflix Logo" /></Link></div>
         <div className="Header__elements">
           <div className="Header__search">
             <label className="Header__label">
