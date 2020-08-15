@@ -18,20 +18,18 @@ function Upload(props) {
                         </div>
                     </div>
                     <div class="Upload__formbox">
-                        <div>
-                            <p className="Upload__label">Title Your Video</p>
-                        </div>
                         <form id="UploadForm" className="Upload__form">
-                            <label className="Upload__label" name="yourlabel" for="upload"></label>
+                            <label className="Upload__label" name="yourlabel" for="upload">Title Your Video</label>
                             <textarea className="comments__textarea" id="subject" name="subject" placeholder="Add a title to your video" />
+                            <label className="Upload__label" name="yourlabel" for="upload">Add a video description</label>
                             <textarea className="comments__textarea" id="subject" name="subject" placeholder="Add a description of your video" />
                         </form>
                     </div>
                 </div>
 
                 <div className="Upload__cta">
-                <button className="Upload__cancel">Cancel</button>
-                <button className="Upload__publish">Publish</button>
+                    <button className="Upload__cancel">Cancel</button>
+                    <button className="Upload__publish">Publish</button>
                 </div>
 
 

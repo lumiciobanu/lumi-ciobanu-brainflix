@@ -11,6 +11,13 @@ function HeaderItem(props) {
 
   }
 
+//   function DateObjectFormatting(dat) {
+//     var month = dat.getMonth() + 1;
+//     var day = dat.getDate();
+//     var year = dat.getFullYear();
+//     return month + "/" + day + "/" + year;
+// }
+
   return (
     <div>
       <div className="MainLeft__header">
@@ -46,7 +53,7 @@ function MainLeft(props) {
     <section className="MainLeft">
       <div className="MainLeft__header">
        
-        <HeaderItem title={props.featured.title} channel={props.featured.channel} timestamp={props.featured.timestamp} views={props.featured.views} likes={props.featured.likes} description={props.featured.description}/>
+        <HeaderItem title={props.featured.title} channel={"By "+props.featured.channel} timestamp={props.featured.timestamp} views={props.featured.views} likes={props.featured.likes} description={props.featured.description}/>
 
       </div>
       

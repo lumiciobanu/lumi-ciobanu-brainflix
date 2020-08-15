@@ -14,7 +14,7 @@ function CommentItem(props) {
             <div class="Comments__add"></div><div>
                 <div class="Comments__header">
                     <p class="Comments__name">{props.name}</p>
-                    <p class="Comments__date">{props.date}</p>
+                    <p class="Comments__date">{props.timestamp}</p>
                 </div>
                 <div class="Comments__text">
                     <p>{props.comment}</p>
@@ -53,7 +53,7 @@ function MainLeftComments(props) {
 
 
                     {props.comments.map((item, index) => {
-                        return <CommentItem key={index} name={item.name} date={item.date} comment={item.comment} image={item.image} text={item.text} />
+                        return <CommentItem key={index} name={item.name} timestamp={item.timestamp} comment={item.comment} image={item.image} text={item.text} />
                     })
                 }
 

@@ -12,7 +12,7 @@ function VideoControllers(props) {
     </div>
     <div className="Hero__controllerContainer"> 
     <div className="Hero__controllerSeek"></div>
-    <div className="Hero__controllerTime">0:00 / 0:42</div> 
+    {/* <div className="Hero__controllerTime">0:00 / 0:42</div>  */}
      </div>
     <div className="Hero__controllerLast">
         <img className="Hero__volumeImg" src={HeroVolume} />
