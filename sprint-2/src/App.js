@@ -17,7 +17,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={MainPage} />
           <Route path="/UploadPage" component={Upload} />
-          <Route path='/:movieId' component={MainPage} />
+          <Route path='/:videoId' component={MainPage} />
         </Switch>
       </BrowserRouter>
     </>

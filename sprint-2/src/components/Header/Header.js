@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Router, Route, Switch, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../Header/Header.scss';
 import logo from '../../assets/logos/Logo-brainflix.svg';
 import HeaderImg from '../../assets/images/Mohan-muruge.jpg';
