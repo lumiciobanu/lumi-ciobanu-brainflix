@@ -47,17 +47,19 @@ function HeaderItem(props) {
 
 
 function MainLeft(props) {
-
+  if (!props.info) {
+    return null
+  }
   
   return (
     <section className="MainLeft">
       <div className="MainLeft__header">
        
-        <HeaderItem title={props.featured.title} channel={"By "+props.featured.channel} timestamp={props.featured.timestamp} views={props.featured.views} likes={props.featured.likes} description={props.featured.description}/>
+        <HeaderItem title={props.info.title} channel={"By "+props.info.channel} id={props.info.id} timestamp={props.info.timestamp} views={props.info.views} likes={props.info.likes} description={props.info.description}/>
 
       </div>
       
-      <MainLeftComments comments={props.featured.comments} />
+      <MainLeftComments comments={props.info.comments} />
 
     </section>
 

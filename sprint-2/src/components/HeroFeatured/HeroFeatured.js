@@ -5,10 +5,14 @@ import VideoControllers from '../VideoControllers/VideoControllers';
 
 
 function HeroFeatured(props) {
+
+  if(!props.video) {
+    return null
+  }
   return (
     <section className="Hero">
      
-       <Video video={props.featured.vide} image={props.featured.image} />
+       <Video video={props.video.video} image={props.video.image} />
      
 
       

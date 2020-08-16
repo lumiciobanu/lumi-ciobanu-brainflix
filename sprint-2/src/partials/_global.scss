@@ -15,6 +15,7 @@ p {
     font-size: 0.813rem;
     line-height: 1.125rem;
     font-weight: normal;
+    color: $black;
 
     @include tablet {
         font-size: 0.875rem;

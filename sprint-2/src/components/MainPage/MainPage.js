@@ -44,10 +44,15 @@ class MainPage extends React.Component {
         
     // ];
 
-    state = {
-        videoList: this.listArray,
-        featured: this.listArray[0]
+    // state = {
+    //     videoList: this.listArray,
+    //     featured: this.listArray[0]
 
+    // }
+
+    state = {
+        featuredMovie: null,
+        videoList: []
     }
 
     componentDidMount() {
@@ -63,11 +68,12 @@ class MainPage extends React.Component {
                 
                 // this.setState({ videoList: results.data })
 
-                axios.get(URL+"/videos/1af0jruup5gu" + KEY)
+                axios.get(URL+"/videos/1af0jruup5gu"+ KEY)
                 .then(results => {
-                    console.log(results)
-                    this.setState({ featured: results.data,
-                    videoList: videos
+                    // console.log(results)
+                    this.setState({ 
+                        featuredMovie: results.data,
+                        videoList: videos
                  })
                 }
                 )
@@ -81,7 +87,7 @@ class MainPage extends React.Component {
         if (prevProps.match.params.videoId !== this.props.match.params.videoId) {
             axios.get(URL+"/videos/"+this.props.match.params.videoId+KEY).then(results => {
                 console.log(results)
-                this.setState({ featured: results.data
+                this.setState({ featuredMovie: results.data
 
                 })
             
@@ -92,14 +98,14 @@ class MainPage extends React.Component {
 
     render() {
 
-        let filteredVideos = this.state.videoList.filter(video => video.id !== this.state.featured.id)
+        let filteredVideos = this.state.videoList.filter(video => video.id !== this.state.featuredMovie.id)
 
         return (
             <>
-                <HeroFeatured featured={this.state.featured} />
+                <HeroFeatured video={this.state.featuredMovie} />
 
                 <section className="Main">
-                    <MainLeft featured={this.state.featured} />
+                    <MainLeft info={this.state.featuredMovie} />
                     <MainAside videos={filteredVideos} />
                 </section>
             </>
