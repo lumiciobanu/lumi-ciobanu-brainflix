@@ -3,7 +3,7 @@ import './components/MainLeft/MainLeft.scss';
 import Header from './components/Header/Header';
 import Upload from '././components/Upload/Upload';
 import MainPage from './components/MainPage/MainPage';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
 

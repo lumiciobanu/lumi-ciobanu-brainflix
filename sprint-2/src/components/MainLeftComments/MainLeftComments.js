@@ -1,6 +1,7 @@
 import React from 'react';
 import './MainLeftComments.scss';
 import commentsImg from '../../assets/images/Mohan-muruge.jpg';
+import getDateStringServ from '../script';
 
 
 
@@ -14,7 +15,7 @@ function CommentItem(props) {
             <div class="Comments__add"></div><div>
                 <div class="Comments__header">
                     <p class="Comments__name">{props.name}</p>
-                    <p class="Comments__date">{props.timestamp}</p>
+                    <p class="Comments__date">{getDateStringServ(props.timestamp)}</p>
                 </div>
                 <div class="Comments__text">
                     <p>{props.comment}</p>

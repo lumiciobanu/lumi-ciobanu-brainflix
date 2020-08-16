@@ -12,47 +12,5 @@
         margin-right: 2rem;
         border-right: 1px solid $mercury;
     }
-
-    &__meta {
-        border-bottom: 1px solid $mercury;
-        margin-bottom: 1rem;
-
-        @include tablet {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-
-    &__meta-left,
-    &__meta-right {
-        display: flex;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    &__views,
-    &__likes {
-        display: flex;
-    }
-
-    &__title {
-        @include big-title-mobile;
-    }
-
-    &__author {
-        font-weight: bold;
-        margin-right: 1rem;
-    }
-
-    &__date {
-        color: $silver;
-    }
-
-    &__icon {
-        margin-right: 0.5rem;
-    }
-
-    &__views {
-        margin-right: 1rem;
-    }
+  
 }
