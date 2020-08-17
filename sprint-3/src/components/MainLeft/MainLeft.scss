@@ -1,0 +1,16 @@
+@import "../../partials/variables";
+@import "../../partials/typography";
+@import "../../partials/mixins";
+@import "../../partials/global";
+
+
+.MainLeft {
+    @include desktop {
+        flex: 2;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-right: 2rem;
+        border-right: 1px solid $mercury;
+    }
+  
+}
