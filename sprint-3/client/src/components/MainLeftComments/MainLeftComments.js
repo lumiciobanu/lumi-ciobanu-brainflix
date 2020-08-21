@@ -29,7 +29,9 @@ function CommentItem(props) {
 
 function MainLeftComments(props) {
 
-    
+    // if (!props.comment) {
+    //     return null
+    // }
     return (
         <div className="Comments">
             <div className="Comments__container">
@@ -50,16 +52,16 @@ function MainLeftComments(props) {
                 </div>
             </div>
             <div class="Comments__box">
-                
 
 
-                    {props.comments.map((item, index) => {
-                        return <CommentItem key={index} name={item.name} timestamp={item.timestamp} comment={item.comment} image={item.image} text={item.text} />
-                    })
+
+                {props.comments.map((item, index) => {
+                    return <CommentItem key={index} name={item.name} timestamp={item.timestamp} comment={item.comment} image={item.image} text={item.text} />
+                })
                 }
 
 
-                
+
             </div>
 
         </div>

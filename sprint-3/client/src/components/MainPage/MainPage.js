@@ -8,8 +8,8 @@ import commentsImg from '../../assets/images/Mohan-muruge.jpg';
 import axios from 'axios';
 
 
-const URL = 'https://project-2-api.herokuapp.com';
-const KEY = '?api_key=7f04c159-f06c-415a-ab44-82b82e7c16f8';
+const URL = 'http://localhost:8080';
+// const KEY = '?api_key=7f04c159-f06c-415a-ab44-82b82e7c16f8';
 
 class MainPage extends React.Component {
     // listArray = [
@@ -62,13 +62,13 @@ class MainPage extends React.Component {
             defaultVideoId = this.props.match.params.videoId
         }
 
-        axios.get(URL+"/videos"+KEY)
+        axios.get("/videos")
             .then(results => {
                 let videos = results.data
                 
                 // this.setState({ videoList: results.data })
 
-                axios.get(URL+"/videos/1af0jruup5gu"+ KEY)
+                axios.get("/videos/1af0jruup5gu")
                 .then(results => {
                     // console.log(results)
                     this.setState({ 
@@ -85,7 +85,7 @@ class MainPage extends React.Component {
 
     componentDidUpdate(prevProps) {
         if (prevProps.match.params.videoId !== this.props.match.params.videoId) {
-            axios.get(URL+"/videos/"+this.props.match.params.videoId+KEY).then(results => {
+            axios.get("/videos/"+this.props.match.params.videoId).then(results => {
                 console.log(results)
                 this.setState({ featuredMovie: results.data
 
