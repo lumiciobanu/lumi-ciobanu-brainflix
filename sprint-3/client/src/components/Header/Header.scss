@@ -96,6 +96,11 @@
     margin-right: 1rem;
 }
 
+&__btn:focus {
+    outline: none !important;
+    border-color: $mercury;
+}
+
 &__btn:before {
     content: "";
     position: absolute;

@@ -47,7 +47,7 @@ class Upload extends React.Component {
 
                 <div className="upload__cta">
                     <button className="upload__cancel">Cancel</button>
-                    <button className="upload__publish">Publish</button>
+                    <button onClick={this.props.clickHandler} className="upload__publish">Publish</button>
                 </div>
 
 
