@@ -3,7 +3,7 @@
 @import "../../partials/global";
 
 
-.Upload {
+.upload {
     padding: 2rem;
     border-top: 2px solid $mercury;
     @include desktop {
@@ -12,10 +12,10 @@
     }
 }
 
-.Upload__header {
+.upload__header {
     padding-bottom: 2rem;
 }
-.Upload__content {
+.upload__content {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -33,11 +33,11 @@
     }
 }
 
-.Upload__label {
+.upload__label {
     @include label-text;
 }
 
-.Upload__formbox {
+.upload__formbox {
     padding-top: 1rem;
     padding-bottom: 1rem;
 
@@ -46,7 +46,7 @@
     }
 }
 
-.Upload__videobox {
+.upload__videobox {
     display: flex;
     flex-direction: column;
     @include desktop {
@@ -56,7 +56,7 @@
     }
 }
 
-.Upload__form {
+.upload__form {
     display: flex;
     flex-direction: column;
 }
@@ -74,19 +74,27 @@ input[type="text"], select, textarea {
     color: $black;
 }
 
-.Upload__thumbnail {
+input[type="text"]:focus,
+    select:focus,
+    textarea:focus {
+        outline: none !important;
+        border-color: $light-blue;
+        
+        }
+
+.upload__thumbnail {
     width: 18rem;
     min-width: 100%;
-    border-radius: 20px;
+    border-radius: 4px;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     @include tablet {
-
+        width: 21.5rem;
     }
 
 }
 
-.Upload__cta {
+.upload__cta {
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
@@ -99,7 +107,7 @@ input[type="text"], select, textarea {
 }
 
 
-.Upload__publish {
+.upload__publish {
     background-color: $light-blue;
     color: $white;
     padding: 12px 16px;
@@ -113,7 +121,7 @@ input[type="text"], select, textarea {
     
 }
 
-.Upload__cancel {
+.upload__cancel {
     background-color: $white;
     color: $light-blue;
     padding: 12px 16px;

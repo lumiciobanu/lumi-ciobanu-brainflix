@@ -2,7 +2,7 @@
 @import "../../partials/mixins";
 @import "../../partials/global";
 
-.Header {
+.header {
     padding: 0.5rem 1rem;
     display: flex;
     flex-direction: column;
@@ -63,8 +63,11 @@
     border: 2px solid $mercury;
     background-color: $alabaster;
     width: 100%;
-    
 }
+&__input:focus {
+    outline: none !important;
+        border-color: $mercury;
+}    
 
 &__upload {
     display: flex;

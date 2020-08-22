@@ -7,11 +7,11 @@ function ListItem(props) {
     return (
 
         <Link to={"/"+props.video.id}>
-        <div className="Aside__item">
-            <img className="Aside__img" src={props.video.image} />
-            <div className="Aside__header">
-                <h2 className="Aside__newTitle">{props.video.title}</h2>
-                <p className="Aside__author">{props.video.channel}</p>
+        <div className="aside__item">
+            <img className="aside__img" src={props.video.image} />
+            <div className="aside__header">
+                <h2 className="aside__newTitle">{props.video.title}</h2>
+                <p className="aside__author">{props.video.channel}</p>
             </div>
         </div>
         </ Link>

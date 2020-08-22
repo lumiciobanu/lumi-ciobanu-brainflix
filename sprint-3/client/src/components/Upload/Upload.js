@@ -27,27 +27,27 @@ class Upload extends React.Component {
 
     render() {
     return (
-        <section className="Upload">
-            <div className="Upload__container">
+        <section className="upload">
+            <div className="upload__container">
 
-                <div className="Upload__header">
-                    <h1 className="Upload__title">Upload Video</h1>
+                <div className="upload__header">
+                    <h1 className="upload__title">Upload Video</h1>
                 </div>
-                <div className="Upload__content">
-                    <div className="Upload__videobox">
+                <div className="upload__content">
+                    <div className="upload__videobox">
                         <div>
-                            <p className="Upload__label">Video Thumbnail</p>
-                            <img className="Upload__thumbnail" src={VideoThumb} alt="Video Thumbnail" />
+                            <p className="upload__label">Video Thumbnail</p>
+                            <img className="upload__thumbnail" src={VideoThumb} alt="Video Thumbnail" />
                         </div>
                     </div>
-                    <div class="Upload__formbox">
+                    <div class="upload__formbox">
                     <UploadNewStatusForm submitHandler={this.addNewStatus} />
                     </div>
                 </div>
 
-                <div className="Upload__cta">
-                    <button className="Upload__cancel">Cancel</button>
-                    <button className="Upload__publish">Publish</button>
+                <div className="upload__cta">
+                    <button className="upload__cancel">Cancel</button>
+                    <button className="upload__publish">Publish</button>
                 </div>
 
 

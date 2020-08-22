@@ -4,7 +4,7 @@
 @import "../../partials/global";
 
 
-.MainLeft {
+.mainLeft {
     @include desktop {
         flex: 2;
         padding-right: 1rem;

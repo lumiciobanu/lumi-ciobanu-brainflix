@@ -4,25 +4,27 @@
 @import "../../partials/global";
 
 
-.Aside__item {
+.aside__item {
     display: flex;
     margin-bottom: 2rem;
 }
 
-.Aside__header {
+.aside__header {
     display: flex;
     flex-direction: column;
     align-self: center;
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.Aside__img {
-    width: 50%;
-    height: 6.25rem;
-    border-radius: 20px;
+.aside__img {
+    width: 7.5rem;
+    height: 4.374rem;
+    border-radius: 4px;
+
+   
 }
 
-.Aside__newTitle {
+.aside__newTitle {
     @include subtitle-mobile;
     margin-bottom: 0.5rem;
 }

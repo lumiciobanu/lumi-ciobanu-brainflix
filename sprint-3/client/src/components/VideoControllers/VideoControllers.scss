@@ -11,11 +11,15 @@
     margin-top: -60px;
     padding-left: 1rem;
     padding-right: 1rem;
-    
-    @include desktop {
-      padding-left: 14rem;
-      padding-right: 14rem;
+    justify-content: center;
+    @include tablet {
+      padding-left:1rem;
+      padding-right: 1rem;
     }
+    // @include desktop {
+    //   padding-left: 14rem;
+    //   padding-right: 14rem;
+    // }
     
   }
   
@@ -30,14 +34,18 @@
   }
   
   .Hero__controllerSeek {
-    width: 200px;
+    width: 13rem;
+    min-width: 100%;
     border: 18px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.5);
     margin-right: 0.5rem;
     margin-left: 0.5rem;
     @include tablet {
-      width: 600px;
+      width: 37rem;
+    }
+    @include desktop {
+      width: 40rem;
     }
   }
 

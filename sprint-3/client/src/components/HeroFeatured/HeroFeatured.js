@@ -10,7 +10,7 @@ function HeroFeatured(props) {
     return null
   }
   return (
-    <section className="Hero">
+    <section className="hero">
      
        <Video video={props.video.video} image={props.video.image} />
      

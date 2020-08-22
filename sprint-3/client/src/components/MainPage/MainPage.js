@@ -3,12 +3,7 @@ import HeroFeatured from '../HeroFeatured/HeroFeatured';
 import MainLeft from '../MainLeft/MainLeft';
 import MainAside from '../MainAside/MainAside';
 import './MainPage.scss';
-import videoImg0 from '../../assets/images/video-list-0.jpg';
-import commentsImg from '../../assets/images/Mohan-muruge.jpg';
 import axios from 'axios';
-
-
-const URL = 'http://localhost:8080';
 
 
 class MainPage extends React.Component {
@@ -29,11 +24,11 @@ class MainPage extends React.Component {
             .then(results => {
                 let videos = results.data
                 
-                // this.setState({ videoList: results.data })
+                
 
                 axios.get("/videos/1af0jruup5gu")
                 .then(results => {
-                    // console.log(results)
+                    
                     this.setState({ 
                         featuredMovie: results.data,
                         videoList: videos

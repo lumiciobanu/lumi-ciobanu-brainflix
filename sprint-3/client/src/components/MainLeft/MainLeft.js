@@ -13,8 +13,8 @@ function MainLeft(props) {
   }
   
   return (
-    <section className="MainLeft">
-      <div className="MainLeft__header">
+    <section className="mainLeft">
+      <div className="mainLeft__header">
        
         <MainLeftHeader title={props.info.title} channel={"By "+props.info.channel} id={props.info.id} timestamp={props.info.timestamp} views={props.info.views} likes={props.info.likes} description={props.info.description}/>
 

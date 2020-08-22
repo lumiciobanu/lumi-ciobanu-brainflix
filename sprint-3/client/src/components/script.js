@@ -1,5 +1,3 @@
-import React from 'react';
-
 const getDateStringServ = timestamp => {
 
     const plus0 = num => `0${num.toString()}`.slice(-2)

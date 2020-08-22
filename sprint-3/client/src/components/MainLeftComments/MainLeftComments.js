@@ -8,16 +8,17 @@ import getDateStringServ from '../script';
 function CommentItem(props) {
     return (
 
-        <div class="Comments__new">
+        <div class="comments__new">
 
-            <img className="Comments__img" src={commentsImg} />
+            {/* <img className="comments__img" src={commentsImg} /> */}
+            <div className="comments__circle"></div>
 
-            <div class="Comments__add"></div><div>
-                <div class="Comments__header">
-                    <p class="Comments__name">{props.name}</p>
-                    <p class="Comments__date">{getDateStringServ(props.timestamp)}</p>
+            <div class="comments__add"></div><div>
+                <div class="comments__header">
+                    <p class="comments__name">{props.name}</p>
+                    <p class="comments__date">{getDateStringServ(props.timestamp)}</p>
                 </div>
-                <div class="Comments__text">
+                <div class="comments__text">
                     <p>{props.comment}</p>
                 </div>
             </div>
@@ -29,29 +30,29 @@ function CommentItem(props) {
 
 function MainLeftComments(props) {
 
-    if (!props.comment) {
-        return null
-    }
+    // if (!props.comment) {
+    //     return null
+    // }
     return (
-        <div className="Comments">
-            <div className="Comments__container">
-                <h2 className="Comments__title">3 Comments</h2>
+        <div className="comments">
+            <div className="comments__container">
+                <h2 className="comments__title">3 Comments</h2>
 
-                <div class="Comments__div">
-                    <img className="Comments__img" src={commentsImg} />
+                <div class="comments__div">
+                    <img className="comments__img" src={commentsImg} />
 
 
-                    <div className="Comments__object">
-                        <p className="Comments__subtitle">Join the conversation</p>
-                        <form id="CommentsForm" className="Comments__form">
+                    <div className="comments__object">
+                        <p className="comments__subtitle">Join the conversation</p>
+                        <form id="commentsForm" className="comments__form">
                             <label className="comments__label" name="yourcomment" for="comment"></label>
                             <textarea className="comments__textarea" id="subject" name="subject" placeholder="Write comment here" />
-                            <input className="Comments__button" type="submit" value="Comment" />
+                            <input className="comments__button" type="submit" value="Comment" />
                         </form>
                     </div>
                 </div>
             </div>
-            <div class="Comments__box">
+            <div class="comments__box">
 
 
 

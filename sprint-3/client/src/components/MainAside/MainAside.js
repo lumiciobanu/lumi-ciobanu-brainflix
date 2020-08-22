@@ -8,11 +8,11 @@ import ListItem from '../ListItem/ListItem';
 function MainAside(props) {
     console.log(props.videos)
     return (
-        <section className="Aside">
-            <div className="Aside__container">
-                <p className="Aside__title">Next Video</p>
+        <section className="aside">
+            <div className="aside__container">
+                <p className="aside__title">Next Video</p>
 
-                <div className="Aside__list">
+                <div className="aside__list">
 
                     {props.videos.map(video => {
                         return <ListItem video={video} />
