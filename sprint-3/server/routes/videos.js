@@ -37,12 +37,22 @@ router.post('/', (req, res) => {
         return res.status(400).json({message: 'Request body is not present' });
     }
 
+    if (Object.keys(req.body).length !== 0 && !checkVideoKeys(req.body)) {
+        return res.status(400).json({ message: 'Request body needs title, description and image' });
+    }
+
 const newVideo = {
     ...req.body,
-    //add all properties, even hardcoded    
-    id: uuidv4(),
-    dateCreated: Date.now()
+     id: info.id,
+    channel: info.channel
+    // timestamp: info.timestamp,
+    // views: info.views,
+    // likes: info.likes,
+    // description: info.descritpion
 };
+
+
+console.log(req.body);
 
 videosData.push(newVideo);
 
@@ -50,7 +60,9 @@ res.status(201).json(newVideo);
 
 });
 
-
+function checkVideoKeys(videoObj) {
+    return !!videoObj.title && !!videoObj.description && !!videoObj.image;
+}
 
 
 module.exports = router;

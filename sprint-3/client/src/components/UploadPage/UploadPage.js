@@ -8,8 +8,7 @@ function UploadPage() {
       <>
         <Header /> 
         <Upload />
-              
-               
+          
       </>
     );
   }

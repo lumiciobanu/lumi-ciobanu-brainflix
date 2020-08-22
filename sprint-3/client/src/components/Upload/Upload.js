@@ -1,8 +1,31 @@
 import React from 'react';
 import '../Upload/Upload.scss';
 import VideoThumb from '../../assets/images/Upload-video-preview.jpg';
+import UploadNewStatusForm from '../UploadNewStatusForm/UploadNewStatusForm';
 
-function Upload(props) {
+
+class Upload extends React.Component {
+    state = {
+        statusList: [
+          'status two',
+          'status one'
+        ]
+      }
+    
+      addNewStatus = (status) => {
+        if (!!status) {
+            
+          let newList = this.state.statusList.slice();
+    
+          newList.unshift(status)
+    
+          this.setState({
+            statusList: newList
+          });
+        }
+      }
+
+    render() {
     return (
         <section className="Upload">
             <div className="Upload__container">
@@ -18,12 +41,7 @@ function Upload(props) {
                         </div>
                     </div>
                     <div class="Upload__formbox">
-                        <form id="UploadForm" className="Upload__form">
-                            <label className="Upload__label" name="yourlabel" for="upload">Title Your Video</label>
-                            <textarea className="comments__textarea" id="subject" name="subject" placeholder="Add a title to your video" />
-                            <label className="Upload__label" name="yourlabel" for="upload">Add a video description</label>
-                            <textarea className="comments__textarea" id="subject" name="subject" placeholder="Add a description of your video" />
-                        </form>
+                    <UploadNewStatusForm submitHandler={this.addNewStatus} />
                     </div>
                 </div>
 
@@ -39,5 +57,7 @@ function Upload(props) {
         </section>
     );
 }
+}
 
 export default Upload;
+

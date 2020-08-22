@@ -29,9 +29,9 @@ function CommentItem(props) {
 
 function MainLeftComments(props) {
 
-    // if (!props.comment) {
-    //     return null
-    // }
+    if (!props.comment) {
+        return null
+    }
     return (
         <div className="Comments">
             <div className="Comments__container">
