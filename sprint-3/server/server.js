@@ -20,7 +20,7 @@ app.use('/videos', videoRoutes);
 
 // start Express on port 8080
 app.listen(PORT, () => {
-    console.log('Server listening on ${PORT}');
+    console.log(`Server listening on ${PORT}`);
     
 });
 

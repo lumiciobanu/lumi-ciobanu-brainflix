@@ -6,7 +6,7 @@ class UploadNewStatusForm extends React.Component {
     submitHandler = (e) => {
         e.preventDefault();
 
-        this.props.submitHandler(e.target.newStatus.Inp.value);
+        this.props.submitHandler(e.target.subject.value, e.target.description.value);
 
         e.target.reset();
     }
@@ -18,8 +18,13 @@ class UploadNewStatusForm extends React.Component {
                 <label className="upload__label" name="yourlabel" for="upload">Title Your Video</label>
                 <textarea className="comments__textarea" id="subject" name="subject" placeholder="Add a title to your video" />
                 <label className="upload__label" name="yourlabel" for="upload">Add a video description</label>
-                <textarea className="comments__textarea" id="subject" name="subject" placeholder="Add a description of your video" />
+                <textarea className="comments__textarea" id="subject" name="description" placeholder="Add a description of your video" />
+                <div className="upload__cta">
+                    <button className="upload__cancel">Cancel</button>
+                    <button type="submit" className="upload__publish">Publish</button>
+                </div>
             </form>
+
         );
     }
 };

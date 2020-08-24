@@ -2,7 +2,10 @@ import React from 'react';
 import '../Upload/Upload.scss';
 import VideoThumb from '../../assets/images/Upload-video-preview.jpg';
 import UploadNewStatusForm from '../UploadNewStatusForm/UploadNewStatusForm';
+import axios from 'axios';
 
+
+let URL = 'http://localhost:8080/videos';
 
 class Upload extends React.Component {
     state = {
@@ -11,18 +14,15 @@ class Upload extends React.Component {
           'status one'
         ]
       }
+
+  
     
-      addNewStatus = (status) => {
-        if (!!status) {
-            
-          let newList = this.state.statusList.slice();
-    
-          newList.unshift(status)
-    
-          this.setState({
-            statusList: newList
-          });
-        }
+      addNewStatus = (subject, description) => {
+       axios.post(URL, {title: subject, description: description, image: VideoThumb})
+       .then(res => {
+         console.log(res)
+       })
+
       }
 
     render() {
@@ -45,10 +45,7 @@ class Upload extends React.Component {
                     </div>
                 </div>
 
-                <div className="upload__cta">
-                    <button className="upload__cancel">Cancel</button>
-                    <button onClick={this.props.clickHandler} className="upload__publish">Publish</button>
-                </div>
+                
 
 
 

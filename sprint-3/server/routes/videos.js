@@ -33,18 +33,20 @@ router.get('/:videoId', (req, res) => {
 
 //POST /videos
 router.post('/', (req, res) => {
-    if (Object.keys(req.body).length === 0) {
-        return res.status(400).json({message: 'Request body is not present' });
-    }
+    // if (Object.keys(req.body).length === 0) {
+    //     return res.status(400).json({message: 'Request body is not present' });
+    // }
 
-    if (Object.keys(req.body).length !== 0 && !checkVideoKeys(req.body)) {
-        return res.status(400).json({ message: 'Request body needs title, description and image' });
-    }
+    // if (Object.keys(req.body).length !== 0 && !checkVideoKeys(req.body)) {
+    //     return res.status(400).json({ message: 'Request body needs title, description and image' });
+    // }
 
 const newVideo = {
-    ...req.body,
-     id: info.id,
-    channel: info.channel
+    title: req.body.title,
+    description: req.body.descritpion,
+    image: req.body.image
+    //  id: info.id,
+    // channel: info.channel
     // timestamp: info.timestamp,
     // views: info.views,
     // likes: info.likes,
